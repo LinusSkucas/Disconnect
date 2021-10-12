@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1535893F27094B0100A2014E /* DisconnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535893E27094B0100A2014E /* DisconnectApp.swift */; };
+		1535894327094B0700A2014E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1535894227094B0700A2014E /* Assets.xcassets */; };
+		1535894627094B0700A2014E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1535894527094B0700A2014E /* Preview Assets.xcassets */; };
+		1535895027094B0800A2014E /* DisconnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535894F27094B0800A2014E /* DisconnectTests.swift */; };
+		1535895A27094B0800A2014E /* DisconnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535895927094B0800A2014E /* DisconnectUITests.swift */; };
+		1535895C27094B0800A2014E /* DisconnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535895B27094B0800A2014E /* DisconnectUITestsLaunchTests.swift */; };
+		15358970270A318B00A2014E /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1535896F270A318A00A2014E /* NetworkExtension.framework */; platformFilter = maccatalyst; };
+		15358973270A318B00A2014E /* FilterDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15358972270A318B00A2014E /* FilterDataProvider.swift */; };
+		15358975270A318B00A2014E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15358974270A318B00A2014E /* main.swift */; };
+		1535897A270A318B00A2014E /* sh.linus.Disconnect.AirGap.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = 1535896D270A318A00A2014E /* sh.linus.Disconnect.AirGap.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		15358980270A325400A2014E /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1535896F270A318A00A2014E /* NetworkExtension.framework */; };
+		15FD749E27151FC300554432 /* BananaPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FD749C27151FC300554432 /* BananaPhone.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1535894C27094B0800A2014E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1535893327094B0100A2014E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1535893A27094B0100A2014E;
+			remoteInfo = Disconnect;
+		};
+		1535895627094B0800A2014E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1535893327094B0100A2014E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1535893A27094B0100A2014E;
+			remoteInfo = Disconnect;
+		};
+		15358978270A318B00A2014E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1535893327094B0100A2014E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1535896C270A318A00A2014E;
+			remoteInfo = AirGap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1535897E270A318B00A2014E /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				1535897A270A318B00A2014E /* sh.linus.Disconnect.AirGap.systemextension in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1535893B27094B0100A2014E /* Disconnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Disconnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1535893E27094B0100A2014E /* DisconnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectApp.swift; sourceTree = "<group>"; };
+		1535894227094B0700A2014E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1535894527094B0700A2014E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1535894B27094B0800A2014E /* DisconnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisconnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1535894F27094B0800A2014E /* DisconnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectTests.swift; sourceTree = "<group>"; };
+		1535895527094B0800A2014E /* DisconnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisconnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1535895927094B0800A2014E /* DisconnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectUITests.swift; sourceTree = "<group>"; };
+		1535895B27094B0800A2014E /* DisconnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1535896827094E1700A2014E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1535896D270A318A00A2014E /* sh.linus.Disconnect.AirGap.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = sh.linus.Disconnect.AirGap.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
+		1535896F270A318A00A2014E /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		15358972270A318B00A2014E /* FilterDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataProvider.swift; sourceTree = "<group>"; };
+		15358974270A318B00A2014E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		15358976270A318B00A2014E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15358977270A318B00A2014E /* AirGap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AirGap.entitlements; sourceTree = "<group>"; };
+		1535897F270A321200A2014E /* Disconnect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Disconnect.entitlements; sourceTree = "<group>"; };
+		15FD749C27151FC300554432 /* BananaPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BananaPhone.swift; path = AirGap/BananaPhone.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1535893827094B0100A2014E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15358980270A325400A2014E /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1535894827094B0800A2014E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1535895227094B0800A2014E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1535896A270A318A00A2014E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15358970270A318B00A2014E /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1535893227094B0100A2014E = {
+			isa = PBXGroup;
+			children = (
+				1535893D27094B0100A2014E /* Disconnect */,
+				1535894E27094B0800A2014E /* DisconnectTests */,
+				1535895827094B0800A2014E /* DisconnectUITests */,
+				15358971270A318B00A2014E /* AirGap */,
+				1535896E270A318A00A2014E /* Frameworks */,
+				1535893C27094B0100A2014E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1535893C27094B0100A2014E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1535893B27094B0100A2014E /* Disconnect.app */,
+				1535894B27094B0800A2014E /* DisconnectTests.xctest */,
+				1535895527094B0800A2014E /* DisconnectUITests.xctest */,
+				1535896D270A318A00A2014E /* sh.linus.Disconnect.AirGap.systemextension */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1535893D27094B0100A2014E /* Disconnect */ = {
+			isa = PBXGroup;
+			children = (
+				1535897F270A321200A2014E /* Disconnect.entitlements */,
+				1535896827094E1700A2014E /* Info.plist */,
+				1535893E27094B0100A2014E /* DisconnectApp.swift */,
+				1535894227094B0700A2014E /* Assets.xcassets */,
+				1535894427094B0700A2014E /* Preview Content */,
+			);
+			path = Disconnect;
+			sourceTree = "<group>";
+		};
+		1535894427094B0700A2014E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1535894527094B0700A2014E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1535894E27094B0800A2014E /* DisconnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				1535894F27094B0800A2014E /* DisconnectTests.swift */,
+			);
+			path = DisconnectTests;
+			sourceTree = "<group>";
+		};
+		1535895827094B0800A2014E /* DisconnectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1535895927094B0800A2014E /* DisconnectUITests.swift */,
+				1535895B27094B0800A2014E /* DisconnectUITestsLaunchTests.swift */,
+			);
+			path = DisconnectUITests;
+			sourceTree = "<group>";
+		};
+		1535896E270A318A00A2014E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1535896F270A318A00A2014E /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15358971270A318B00A2014E /* AirGap */ = {
+			isa = PBXGroup;
+			children = (
+				15FD749C27151FC300554432 /* BananaPhone.swift */,
+				15358972270A318B00A2014E /* FilterDataProvider.swift */,
+				15358974270A318B00A2014E /* main.swift */,
+				15358976270A318B00A2014E /* Info.plist */,
+				15358977270A318B00A2014E /* AirGap.entitlements */,
+			);
+			path = AirGap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1535893A27094B0100A2014E /* Disconnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1535895F27094B0800A2014E /* Build configuration list for PBXNativeTarget "Disconnect" */;
+			buildPhases = (
+				1535893727094B0100A2014E /* Sources */,
+				1535893827094B0100A2014E /* Frameworks */,
+				1535893927094B0100A2014E /* Resources */,
+				1535897E270A318B00A2014E /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15358979270A318B00A2014E /* PBXTargetDependency */,
+			);
+			name = Disconnect;
+			productName = Disconnect;
+			productReference = 1535893B27094B0100A2014E /* Disconnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1535894A27094B0800A2014E /* DisconnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1535896227094B0800A2014E /* Build configuration list for PBXNativeTarget "DisconnectTests" */;
+			buildPhases = (
+				1535894727094B0800A2014E /* Sources */,
+				1535894827094B0800A2014E /* Frameworks */,
+				1535894927094B0800A2014E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1535894D27094B0800A2014E /* PBXTargetDependency */,
+			);
+			name = DisconnectTests;
+			productName = DisconnectTests;
+			productReference = 1535894B27094B0800A2014E /* DisconnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1535895427094B0800A2014E /* DisconnectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1535896527094B0800A2014E /* Build configuration list for PBXNativeTarget "DisconnectUITests" */;
+			buildPhases = (
+				1535895127094B0800A2014E /* Sources */,
+				1535895227094B0800A2014E /* Frameworks */,
+				1535895327094B0800A2014E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1535895727094B0800A2014E /* PBXTargetDependency */,
+			);
+			name = DisconnectUITests;
+			productName = DisconnectUITests;
+			productReference = 1535895527094B0800A2014E /* DisconnectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1535896C270A318A00A2014E /* AirGap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1535897B270A318B00A2014E /* Build configuration list for PBXNativeTarget "AirGap" */;
+			buildPhases = (
+				15358969270A318A00A2014E /* Sources */,
+				1535896A270A318A00A2014E /* Frameworks */,
+				1535896B270A318A00A2014E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirGap;
+			productName = AirGap;
+			productReference = 1535896D270A318A00A2014E /* sh.linus.Disconnect.AirGap.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1535893327094B0100A2014E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					1535893A27094B0100A2014E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					1535894A27094B0800A2014E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 1535893A27094B0100A2014E;
+					};
+					1535895427094B0800A2014E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 1535893A27094B0100A2014E;
+					};
+					1535896C270A318A00A2014E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 1535893627094B0100A2014E /* Build configuration list for PBXProject "Disconnect" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1535893227094B0100A2014E;
+			productRefGroup = 1535893C27094B0100A2014E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1535893A27094B0100A2014E /* Disconnect */,
+				1535896C270A318A00A2014E /* AirGap */,
+				1535895427094B0800A2014E /* DisconnectUITests */,
+				1535894A27094B0800A2014E /* DisconnectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1535893927094B0100A2014E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1535894627094B0700A2014E /* Preview Assets.xcassets in Resources */,
+				1535894327094B0700A2014E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1535894927094B0800A2014E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1535895327094B0800A2014E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1535896B270A318A00A2014E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1535893727094B0100A2014E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1535893F27094B0100A2014E /* DisconnectApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1535894727094B0800A2014E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1535895027094B0800A2014E /* DisconnectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1535895127094B0800A2014E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1535895C27094B0800A2014E /* DisconnectUITestsLaunchTests.swift in Sources */,
+				1535895A27094B0800A2014E /* DisconnectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15358969270A318A00A2014E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15358975270A318B00A2014E /* main.swift in Sources */,
+				15358973270A318B00A2014E /* FilterDataProvider.swift in Sources */,
+				15FD749E27151FC300554432 /* BananaPhone.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1535894D27094B0800A2014E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1535893A27094B0100A2014E /* Disconnect */;
+			targetProxy = 1535894C27094B0800A2014E /* PBXContainerItemProxy */;
+		};
+		1535895727094B0800A2014E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1535893A27094B0100A2014E /* Disconnect */;
+			targetProxy = 1535895627094B0800A2014E /* PBXContainerItemProxy */;
+		};
+		15358979270A318B00A2014E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1535896C270A318A00A2014E /* AirGap */;
+			targetProxy = 15358978270A318B00A2014E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1535895D27094B0800A2014E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1535895E27094B0800A2014E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1535896027094B0800A2014E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Disconnect/Disconnect.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Disconnect/Preview Content\"";
+				DEVELOPMENT_TEAM = P6PV2R9443;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Disconnect/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.Disconnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1535896127094B0800A2014E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Disconnect/Disconnect.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Disconnect/Preview Content\"";
+				DEVELOPMENT_TEAM = P6PV2R9443;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Disconnect/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.Disconnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1535896327094B0800A2014E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.DisconnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Disconnect.app/Contents/MacOS/Disconnect";
+			};
+			name = Debug;
+		};
+		1535896427094B0800A2014E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.DisconnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Disconnect.app/Contents/MacOS/Disconnect";
+			};
+			name = Release;
+		};
+		1535896627094B0800A2014E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.DisconnectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Disconnect;
+			};
+			name = Debug;
+		};
+		1535896727094B0800A2014E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.DisconnectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Disconnect;
+			};
+			name = Release;
+		};
+		1535897C270A318B00A2014E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AirGap/AirGap.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirGap/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AirGap;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.Disconnect.AirGap;
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1535897D270A318B00A2014E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AirGap/AirGap.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirGap/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AirGap;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.Disconnect.AirGap;
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1535893627094B0100A2014E /* Build configuration list for PBXProject "Disconnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1535895D27094B0800A2014E /* Debug */,
+				1535895E27094B0800A2014E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1535895F27094B0800A2014E /* Build configuration list for PBXNativeTarget "Disconnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1535896027094B0800A2014E /* Debug */,
+				1535896127094B0800A2014E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1535896227094B0800A2014E /* Build configuration list for PBXNativeTarget "DisconnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1535896327094B0800A2014E /* Debug */,
+				1535896427094B0800A2014E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1535896527094B0800A2014E /* Build configuration list for PBXNativeTarget "DisconnectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1535896627094B0800A2014E /* Debug */,
+				1535896727094B0800A2014E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1535897B270A318B00A2014E /* Build configuration list for PBXNativeTarget "AirGap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1535897C270A318B00A2014E /* Debug */,
+				1535897D270A318B00A2014E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1535893327094B0100A2014E /* Project object */;
+}
